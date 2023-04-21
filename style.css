@@ -1,0 +1,35 @@
+#App{
+    width:100%;
+    max-width: 100%;
+}
+#App p{
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(65, 42, 165);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+#App textarea{
+    width: 100%;
+    border: 2px solid rgb(0, 47, 255);
+    outline: none;
+    border-radius: 14px;
+    min-height: 140px;
+}
+#App select{
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    margin: 14px;
+    font-size: 26px;
+}
+header{
+    display: flex;
+    justify-content: right;
+    justify-content: space-between;
+    background: rgb(216, 211, 211);
+}
+#logo{
+   padding: 10px;
+}
