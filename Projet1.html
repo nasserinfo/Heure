@@ -4,34 +4,25 @@
         <meta chrset="utf-8"/>
         <meta name="viewport" content="width=device-width", initial-scale="1", user-scalable="non"/>
         <link rel="stylesheet" href="style.css"/> 
-        <title>Crypte</title>
+        <title>Time</title>
+        <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
 </head>
 
 
-<body>
-<header>
-  <h1 id="textH">Mosbahi nasser</h1>
-  <img id="logo" src="logo.ico" />
-</header>
-
-<main id="App">
-  <p>text - نص</p>
-  <select id="select">
-    <option value="encode">encode text</option>
-    <option value="decode">decode text</option>
-  </select>
-
-  <textarea id="text">
-
-  </textarea>
-  <p>Result - النتيجة</p>
-  <textarea id="text1">
-
-  </textarea>
-
-
+<body id="body">
+<main id="outside_box">
+        <main id="inside_box">
+                <article id="time">
+                        <h1 id="setTime">23.00</h1>
+                </article>
+                <article id="date">
+                        <p id="setDate">15/04/2023</p>
+                </article>
+                <article id="color">
+                        <input id="setColor" type="color" onchange="getColor()"/>
+                </article>
+        </main>
 </main>
-
 
 
 

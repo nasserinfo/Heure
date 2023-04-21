@@ -1,19 +1,15 @@
+function updatedate(){ 
+    document.getElementById("setTime").innerHTML=new Date().getHours()+":"+new Date().getMinutes()+":"+new Date().getSeconds();
+    document.getElementById("setDate").innerHTML=new Date().getDate()+"/"+parseInt(new Date().getMonth()+1)+"/"+new Date().getFullYear();
+}
+setInterval(updatedate,100);
 
-var textarea=document.getElementById("text");
-var result=document.getElementById("text1");
-var select=document.getElementById("select");
+function getColor(){
+    localStorage.setItem("Color",document.getElementById("setColor").value);
+    document.getElementById("time").style.background=localStorage.getItem("Color");
+    document.getElementById("body").style.background=localStorage.getItem("Color");
+}
 
-textarea.addEventListener("input",()=>{
-    make_result();
-});
-select.addEventListener("change",()=>{
-    make_result();
-});
-
-function make_result(){
-    if( select.value=="encode"){
-        result.value=btoa(textarea.value)
-    }else{
-        result.value=atob(textarea.value)
-    }
-};
+document.getElementById("setColor").value = localStorage.getItem("Color");
+document.getElementById("time").style.background =localStorage.getItem("Color");
+document.getElementById("body").style.background = localStorage.getItem("Color");
